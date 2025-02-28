@@ -39,4 +39,4 @@ We provide the trained models in the link below:
 We will update this repository for better clarity ASAP, current version is for quick research for researchers interested in the cross-view geo-localization task.
 
 ## 5. Acknowledgement
-This repository is built using the Sample4Geo[https://github.com/Skyy93/Sample4Geo] and MCCG[https://github.com/mode-str/crossview] repositories.
+This repository is built using the Sample4Geo[https://github.com/Skyy93/Sample4Geo],MCCG[https://github.com/mode-str/crossview] and DAC [https://github.com/SummerpanKing/DAC] repositories.
