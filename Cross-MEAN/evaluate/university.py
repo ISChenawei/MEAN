@@ -24,7 +24,6 @@ def evaluate(config,
 
     gl = ids_gallery.cpu().numpy()
     ql = ids_query.cpu().numpy()
-    # save_features_to_mat(img_features_query,img_features_gallery,ql,gl,paths_query, paths_gallery)
     print("Compute Scores:")
     CMC = torch.IntTensor(len(ids_gallery)).zero_()
     ap = 0.0
@@ -90,58 +89,6 @@ def eval_query(qf, ql, gf, gl,query_path,paths_gallery):
     CMC_tmp = compute_mAP(index, good_index, junk_index)
     return CMC_tmp
 
-def save_features_to_mat(query_features, gallery_features, query_labels, gallery_labels, paths_query, paths_gallery, save_path='SUES-D-S-150-features.mat'):
-    """
-    保存提取的特征和标签到 .mat 文件
-    """
-    result = {
-        'query_features': query_features.cpu().numpy(),
-        'gallery_features': gallery_features.cpu().numpy(),
-        'query_labels': query_labels,
-        'gallery_labels': gallery_labels,
-        'paths_query': paths_query,
-        'paths_gallery': paths_gallery
-    }
-    scipy.io.savemat(save_path, result)
-    print(f'Features and labels saved to {save_path}')
-
-# def plot_query_and_gallery(query_image_path,gallery_image_path,save_folder):
-#     fig,axes =plt.subplots(1,len(gallery_image_path) + 1,figsize = (20,5))
-#     if not os.path.exists(save_folder):
-#         os.makedirs(save_folder)
-#     query_folder = os.path.basename(os.path.dirname(query_image_path))
-#     split_path = query_image_path.split('query_satellite',1)[-1]
-#     query_filename = split_path.strip(os.sep)
-#
-#     output_filename = query_filename.replace(os.sep,"_")
-#     output_filename = f"{output_filename}_result.png"
-#     query_img = cv.imread(query_image_path)
-#     query_img = cv.cvtColor(query_img,cv.COLOR_BGR2RGB)
-#     axes[0].imshow(query_img)
-#     # axes[0].set.title('Query Image')
-#     axes[0].axis('off')
-#
-#     # rect = patches.Rectangle((0,0),query_img.shape[1],query_img.shape[0],
-#     #                          linewidth=5 , edgecolor='orange',facecolor='none')
-#     # axes[0].add_patch(rect)
-#
-#     for i,gallery_image_path in enumerate(gallery_image_path):
-#         gallery_img = cv.imread(gallery_image_path)
-#         gallery_img = cv.cvtColor(gallery_img,cv.COLOR_BGR2RGB)
-#         axes[i + 1].imshow(gallery_img)
-#         # axes[i + 1].set_totle(f'Gallery {i +1 }')
-#         axes[i + 1].axis('off')
-#         gallery_folder = os.path.basename(os.path.dirname(gallery_image_path))
-#         is_match = query_folder == gallery_folder
-#         rect_color ='green' if is_match else 'red'
-#         rect = patches.Rectangle((0, 0), query_img.shape[1], query_img.shape[0],
-#                                  linewidth=8, edgecolor=rect_color, facecolor='none')
-#         axes[i + 1].add_patch(rect)
-#     plt.tight_layout()
-#     out_path = os.path.join(save_folder,output_filename)
-#     plt.savefig(out_path)
-#     plt.close()
-#     print(f"Image saved to : {out_path}")
 def compute_mAP(index, good_index, junk_index):
     ap = 0
     cmc = torch.IntTensor(len(index)).zero_()
