@@ -12,7 +12,7 @@ Test: run *train_university.py*, with --only_test = True, and choose the model i
 
 ## 2. For SUES-200 dataset.
 
-You need to split the origin dataset into the appropriate format using the script "MEAN-->Corss-MEAN-->dataset-->SUES-200-->split_datasets.py".
+You need to split the origin dataset into the appropriate format using the script "MEAN-->sample4geo-->dataset-->SUES-200-->split_datasets.py".
 
 The processed format should be:
 
