@@ -247,27 +247,26 @@ class build_convnext(nn.Module):
             # 1. Domain Space Alignment Module
             b, c, h, w = part_features.shape
             pfeat = part_features.flatten(2)  # (bs, c, h*w)
-            W = self.proj(pfeat)  # transfer 1024 to 256
+            W = self.proj(pfeat)  
             W = F.normalize(W, dim=1) if self.l2_norm else W
             W *= (1/self.scale)
             W = self.feature_scaling(W)
             W = F.softmax(W, dim=2)
             pfeat_align = self.MSF(pfeat,W)
             # 2. triplet attention
-            # wfeat,hfeat = self.MSE(part_features)
-            tri_features = self.MSE(part_features)  # 旋转另外两个轴，返回两个一样的特征体(bs, 1024, 12, 12); (bs, 1024, 12, 12)
-            convnext_feature = self.classifier1(gap_feature)  # class: (bs, 701); feature: (bs, 512)
+            tri_features = self.MSE(part_features) 
+            convnext_feature = self.classifier1(gap_feature) 
             tri_list = []
             for i in range(self.block):
-                tri_list.append(tri_features[i].mean([-2, -1]))  # average pooling, 一张图变一个像素
-            triatten_features = torch.stack(tri_list, dim=2)  # 把另外两个轴旋转的特征体
+                tri_list.append(tri_features[i].mean([-2, -1]))  
+            triatten_features = torch.stack(tri_list, dim=2)  
             if self.block == 0:
                 y = []
             else:
                 y = self.part_classifier(self.block, triatten_features,
-                                         cls_name='classifier_mcb')  # 把另外两个轴旋转的feature也做分类
-            y = y + [convnext_feature]  # 三个分支连起来
-            if self.return_f:  # return_f是triplet loss的设置，0.3
+                                         cls_name='classifier_mcb')  
+            y = y + [convnext_feature] 
+            if self.return_f: 
                 cls, features = [], []
                 for i in y:
                     cls.append(i[0])
