@@ -4,7 +4,7 @@ import torch.nn.functional as F
 import torch.distributed.nn
 from torch.autograd import Variable
 import numpy as np
-class DSA_loss(nn.Module):
+class CDA_loss(nn.Module):
     """
     this loss function should support mse loss and infoNCE loss.
     """
