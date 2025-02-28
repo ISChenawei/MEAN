@@ -11,7 +11,7 @@ from torch.nn.parameter import Parameter
 
 from sample4geo.Utils import init
 
-class MSE_module(nn.Module):
+class DEG_module(nn.Module):
     def __init__(self, channel, reduction=16,spatial_kernel_size=7,flag=False):
         super(MSE_module, self).__init__()
         self.FC11 = nn.Conv2d(channel, channel//4, kernel_size=3, stride=1, padding=1, bias=False, dilation=1)
@@ -222,7 +222,7 @@ class build_convnext(nn.Module):
         self.num_classes = num_classes
         self.classifier1 = ClassBlock(self.in_planes, num_classes, 0.5, return_f=return_f)
         self.block = block
-        self.MSE = MSE_module(768,flag=True)
+        self.DEG = DEG_module(768,flag=True)
         self.MSF = MSF_module([768, 256], output_channels=512)
         for i in range(self.block):
             name = 'classifier_mcb' + str(i + 1)
@@ -253,8 +253,8 @@ class build_convnext(nn.Module):
             W = self.feature_scaling(W)
             W = F.softmax(W, dim=2)
             pfeat_align = self.MSF(pfeat,W)
-            # 2. triplet attention
-            tri_features = self.MSE(part_features) 
+
+            tri_features = self.DEG(part_features) 
             convnext_feature = self.classifier1(gap_feature) 
             tri_list = []
             for i in range(self.block):
