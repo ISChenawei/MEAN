@@ -38,5 +38,19 @@ We provide the trained models in the link below:
 
 We will update this repository for better clarity ASAP, current version is for quick research for researchers interested in the cross-view geo-localization task.
 
+## Citation
+
+ If you find this code useful for your research, please cite our papers.
+
+```bibtex
+@article{chen2024multi,
+  title={Multi-Level Embedding and Alignment Network with Consistency and Invariance Learning for Cross-View Geo-Localization},
+  author={Chen, Zhongwei and Yang, Zhao-Xu and Rong, Hai-Jun},
+  journal={arXiv preprint arXiv:2412.14819},
+  year={2024}
+}
+```
+
 ## 5. Acknowledgement
 This repository is built using the Sample4Geo[https://github.com/Skyy93/Sample4Geo],MCCG[https://github.com/mode-str/crossview] and DAC [https://github.com/SummerpanKing/DAC] repositories.
+
