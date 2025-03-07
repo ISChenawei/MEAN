@@ -13,7 +13,7 @@ from sample4geo.Utils import init
 
 class DEG_module(nn.Module):
     def __init__(self, channel, reduction=16,spatial_kernel_size=7,flag=False):
-        super(MSE_module, self).__init__()
+        super(DEG_module, self).__init__()
         self.FC11 = nn.Conv2d(channel, channel//4, kernel_size=3, stride=1, padding=1, bias=False, dilation=1)
         self.FC11.apply(weights_init_kaiming)
         self.FC12 = nn.Conv2d(channel, channel//4, kernel_size=3, stride=1, padding=2, bias=False, dilation=2)
