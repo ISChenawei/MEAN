@@ -27,14 +27,12 @@ For University-1652 dataset
 Train: run train_university.py, with --only_test = False.
 
 Test: run train_university.py, with --only_test = True, and choose the model in --ckpt_path.
-
 ```
-For University-1652 dataset
+For SUES-200 dataset
 ```
 Train: run train_SUES-200.py, with --only_test = False.
 
 Test: run train_SUES-200.py, with --only_test = True, and choose the model in --ckpt_path.
-
 ```
 
 
