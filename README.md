@@ -17,18 +17,49 @@ The current version of the repository can cover the experiments reported in the 
 - [Citation](#citation)
 
 ## <a id="dataset-access"></a> 💾 Dataset Access
-
+Please prepare [University-1652](https://github.com/layumi/University1652-Baseline), [SUES-200](https://github.com/Reza-Zhu/SUES-200-Benchmark)
 ## <a id="dataset-structure"></a> 📁 Dataset Structure
+
+## University-1652 Dataset Directory Structure
+```
+├── University-1652/
+│   ├── readme.txt
+│   ├── train/
+│       ├── drone/                   /* drone-view training images 
+│           ├── 0001
+|           ├── 0002
+|           ...
+│       ├── satellite/               /* satellite-view training images       
+│   ├── test/
+│       ├── query_drone/  
+│       ├── gallery_drone/  
+│       ├── query_satellite/  
+│       ├── gallery_satellite/ 
+```
+## SUES-200 Dataset Directory Structure
+```
+├─ SUES-200
+  ├── Training
+    ├── 150/
+    ├── 200/
+    ├── 250/
+    └── 300/
+  ├── Testing
+    ├── 150/
+    ├── 200/ 
+    ├── 250/	
+    └── 300/
+```
 
 ## <a id="train-and-test"></a> 🚀 Train and Test
 
-For University-1652 dataset
+For University-1652 Dataset
 ```
 Train: run train_university.py, with --only_test = False.
 
 Test: run train_university.py, with --only_test = True, and choose the model in --ckpt_path.
 ```
-For SUES-200 dataset
+For SUES-200 Dataset
 ```
 Train: run train_SUES-200.py, with --only_test = False.
 
