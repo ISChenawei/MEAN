@@ -18,7 +18,7 @@ The current version of the repository can cover the experiments reported in the 
 Please prepare [University-1652](https://github.com/layumi/University1652-Baseline), [SUES-200](https://github.com/Reza-Zhu/SUES-200-Benchmark)
 ## <a id="dataset-structure"></a> 📁 Dataset Structure
 
-## University-1652 Dataset Directory Structure
+### University-1652 Dataset Directory Structure
 ```
 ├── University-1652/
 │   ├── readme.txt
@@ -34,7 +34,7 @@ Please prepare [University-1652](https://github.com/layumi/University1652-Baseli
 │       ├── query_satellite/  
 │       ├── gallery_satellite/ 
 ```
-## SUES-200 Dataset Directory Structure
+### SUES-200 Dataset Directory Structure
 ```
 ├─ SUES-200
   ├── Training
