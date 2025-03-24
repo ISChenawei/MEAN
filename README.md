@@ -5,7 +5,6 @@ The current version of the repository can cover the experiments reported in the 
 
 ## <a id="table-of-contents"></a> 📚 Table of contents
 
-- [Dataset Highlights](#dataset-highlights)
 - [Dataset Access](#dataset-access)
 - [Dataset Structure](#dataset-structure)
 - [Train and Test](#train-and-test)
