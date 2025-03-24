@@ -62,7 +62,6 @@ Train: run train_SUES-200.py, with --only_test = False.
 Test: run train_SUES-200.py, with --only_test = True, and choose the model in --ckpt_path.
 ```
 
-
 ## <a id="pre-trained-checkpoints"></a> 🤗 Pre-trained Checkpoints
 We provide the trained models in the link below:
 
