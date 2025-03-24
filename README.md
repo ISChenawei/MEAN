@@ -22,13 +22,20 @@ The current version of the repository can cover the experiments reported in the 
 
 ## <a id="train-and-test"></a> 🚀 Train and Test
 
+For University-1652 dataset
 ```
 Train: run train_university.py, with --only_test = False.
 
 Test: run train_university.py, with --only_test = True, and choose the model in --ckpt_path.
 
 ```
+For University-1652 dataset
+```
+Train: run train_SUES-200.py, with --only_test = False.
 
+Test: run train_SUES-200.py, with --only_test = True, and choose the model in --ckpt_path.
+
+```
 
 
 ## <a id="pre-trained-checkpoints"></a> 🤗 Pre-trained Checkpoints
