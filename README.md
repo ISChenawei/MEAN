@@ -5,44 +5,43 @@ The current version of the repository can cover the experiments reported in the 
 
 <img src="overview.png"/>
 
-## 1. For University-1652 dataset.
+## <a id="table-of-contents"></a> 📚 Table of contents
+
+- [Dataset Highlights](#dataset-highlights)
+- [Dataset Access](#dataset-access)
+- [Dataset Structure](#dataset-structure)
+- [Train and Test](#train-and-test)
+- [Pre-trained Checkpoints](#pre-trained-checkpoints)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+- [Citation](#citation)
+
+## <a id="dataset-access"></a> 💾 Dataset Access
+
+## <a id="dataset-structure"></a> 📁 Dataset Structure
+
+## <a id="train-and-test"></a> 🚀 Train and Test
+
 ```
-Train: run *train_university.py*, with --only_test = False.
+Train: run train_university.py, with --only_test = False.
 
-Test: run *train_university.py*, with --only_test = True, and choose the model in --ckpt_path.
+Test: run train_university.py, with --only_test = True, and choose the model in --ckpt_path.
 
-```
-
-## 2. For SUES-200 dataset.
-
-You need to split the origin dataset into the appropriate format using the script "MEAN-->sample4geo-->dataset-->SUES-200-->split_datasets.py".
-
-The processed format should be:
-
-```
-├─ SUES-200
-  ├── Training
-    ├── 150/
-    ├── 200/
-    ├── 250/
-    └── 300/
-  ├── Testing
-    ├── 150/
-    ├── 200/ 
-    ├── 250/	
-    └── 300/
 ```
 
-The train and test operation is similar to the University-1652 dataset but with the script train_sues200.py
 
-## 4. Models
+
+## <a id="pre-trained-checkpoints"></a> 🤗 Pre-trained Checkpoints
 We provide the trained models in the link below:
 
 Link: [https://pan.baidu.com/s/1YPEV27tnadqCZBRCscTMTA : 6666]
 
 We will update this repository for better clarity ASAP, current version is for quick research for researchers interested in the cross-view geo-localization task.
 
-## Citation
+## <a id="license"></a> 🎫 License
+This project is licensed under the [Apache 2.0 license](LICENSE).
+
+## <a id="citation"></a> 📌 Citation
 
  If you find this code useful for your research, please cite our papers.
 
@@ -55,6 +54,6 @@ We will update this repository for better clarity ASAP, current version is for q
 }
 ```
 
-## 5. Acknowledgement
+## <a id="acknowledgments"></a> 🙏 Acknowledgments
 This repository is built using the Sample4Geo[https://github.com/Skyy93/Sample4Geo], MCCG[https://github.com/mode-str/crossview] and DAC [https://github.com/SummerpanKing/DAC] repositories.
 
