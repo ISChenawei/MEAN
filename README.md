@@ -3,8 +3,6 @@ This repository is the official implementation of the paper "Multi-Level Embeddi
 
 The current version of the repository can cover the experiments reported in the paper, for researchers in time efficiency. And we will also update this repository for better understanding and clarity.
 
-<img src="overview.png"/>
-
 ## <a id="table-of-contents"></a> 📚 Table of contents
 
 - [Dataset Highlights](#dataset-highlights)
