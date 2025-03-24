@@ -1,5 +1,5 @@
-# MEAN
-This repository is the official implementation of the paper "Multi-Level Embedding and Alignment Network with Consistency and Invariance Learning for Cross-View Geo-Localization". 
+## MEAN 2024 [[paper](https://arxiv.org/abs/2412.14819)][[model](https://pan.baidu.com/s/1YPEV27tnadqCZBRCscTMTA : 6666)] [[Cite](## Citation)]
+This repository is the official implementation of the paper "Multi-Level Embedding and Alignment Network with Consistency and Invariance Learning for Cross-View Geo-Localization" (https://arxiv.org/abs/2412.14819). 
 
 The current version of the repository can cover the experiments reported in the paper, for researchers in time efficiency. And we will also update this repository for better understanding and clarity.
 
