@@ -20,7 +20,6 @@ Please prepare [University-1652](https://github.com/layumi/University1652-Baseli
 ### University-1652 Dataset Directory Structure
 ```
 ├── University-1652/
-│   ├── readme.txt
 │   ├── train/
 │       ├── drone/                   /* drone-view training images 
 │           ├── 0001
