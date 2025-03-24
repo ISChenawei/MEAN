@@ -4,12 +4,14 @@ This repository is the official implementation of the paper "Multi-Level Embeddi
 The current version of the repository can cover the experiments reported in the paper, for researchers in time efficiency. And we will also update this repository for better understanding and clarity.
 
 <img src="overview.png"/>
-## 1. For University-1652 dataset.
 
+## 1. For University-1652 dataset.
+```
 Train: run *train_university.py*, with --only_test = False.
 
 Test: run *train_university.py*, with --only_test = True, and choose the model in --ckpt_path.
 
+```
 
 ## 2. For SUES-200 dataset.
 
