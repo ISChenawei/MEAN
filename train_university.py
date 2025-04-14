@@ -20,7 +20,7 @@ from sample4geo.evaluate.university import evaluate
 from sample4geo.loss.loss import InfoNCE
 from sample4geo.loss.triplet_loss import TripletLoss, Tripletloss
 from sample4geo.loss.blocks_infoNCE import blocks_InfoNCE
-from sample4geo.loss.DSA_loss import DSA_loss
+from sample4geo.loss.CDA_loss import CDA_loss
 
 from sample4geo.model import TimmModel
 from torch.utils.tensorboard import SummaryWriter
@@ -319,7 +319,7 @@ if __name__ == '__main__':
     loss_fn3 = blocks_InfoNCE(loss_function=loss_fn, device=config.device)
 
     # 4.DSA loss infoNCE
-    loss_fn4 = DSA_loss(loss_function=loss_fn, device=config.device)
+    loss_fn4 = CDA_loss(loss_function=loss_fn, device=config.device)
 
     # all loss functions
     loss_functions = {"infoNCE": loss_fn1, "Triplet": loss_fn2, "blocks_infoNCE": loss_fn3, "DSA_loss": loss_fn4}
