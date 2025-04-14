@@ -78,13 +78,7 @@ def eval_query(qf, ql, gf, gl,query_path,paths_gallery):
     junk_index = np.argwhere(gl == -1)
     top_k_results = index[:top_k]
     top_k_path =[paths_gallery[i] for i in top_k_results]
-    # print(f"Query Image:{query_path}")
-    # save_folder='/home/hk/PAPER/DAC-main/SUES-D-S-150-Rank'
-    # #
-    # # print(f"Query ID:{ql},Top {top_k} Gallery Results:{gl[top_k_results]}")
-    # for rank,gallery_path in enumerate(top_k_path,1):
-    #     plot_query_and_gallery(query_path, top_k_path, save_folder)
-    #     print(f"Top{rank} Gallery Image:{gallery_path}")
+  
     ## T-tsne
     CMC_tmp = compute_mAP(index, good_index, junk_index)
     return CMC_tmp
