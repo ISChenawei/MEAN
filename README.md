@@ -3,7 +3,7 @@
 
   <h1 align="center">Multi-Level Embedding and Alignment Network with Consistency and Invariance Learning for Cross-View Geo-Localization</h1>
   <p align="center">
-    <img src="results/1.png" alt="Description of the image" style="width:54%;">
+    <img src="result/1.png" alt="Description of the image" style="width:54%;">
   <p align="center">
 This repository is the official implementation of the paper "Multi-Level Embedding and Alignment Network with Consistency and Invariance Learning for Cross-View Geo-Localization" (https://arxiv.org/abs/2412.14819). 
 
