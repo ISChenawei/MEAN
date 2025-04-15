@@ -24,6 +24,7 @@ def evaluate(config,
 
     gl = ids_gallery.cpu().numpy()
     ql = ids_query.cpu().numpy()
+    save_features_to_mat(img_features_query,img_features_gallery,ql,gl,paths_query, paths_gallery)
     print("Compute Scores:")
     CMC = torch.IntTensor(len(ids_gallery)).zero_()
     ap = 0.0
@@ -82,7 +83,20 @@ def eval_query(qf, ql, gf, gl,query_path,paths_gallery):
     ## T-tsne
     CMC_tmp = compute_mAP(index, good_index, junk_index)
     return CMC_tmp
-
+def save_features_to_mat(query_features, gallery_features, query_labels, gallery_labels, paths_query, paths_gallery, save_path='features.mat'):
+    """
+    Save the extracted features and labels to a .mat file
+    """
+    result = {
+        'query_features': query_features.cpu().numpy(),
+        'gallery_features': gallery_features.cpu().numpy(),
+        'query_labels': query_labels,
+        'gallery_labels': gallery_labels,
+        'paths_query': paths_query,
+        'paths_gallery': paths_gallery
+    }
+    scipy.io.savemat(save_path, result)
+    print(f'Features and labels saved to {save_path}')
 def compute_mAP(index, good_index, junk_index):
     ap = 0
     cmc = torch.IntTensor(len(index)).zero_()
