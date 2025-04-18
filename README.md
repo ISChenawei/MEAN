@@ -2,7 +2,7 @@
 <p align="center">
 
   <h1 align="center">Multi-Level Embedding and Alignment Network with Consistency and Invariance Learning for Cross-View Geo-Localization</h1>
-  <h3 align="center"><strong>Zhongwei Chen</strong>, <strong>Yangzhao Xu</strong>, <strong>Haijun Rong</strong></h3>
+  <h3 align="center"><strong>Zhongwei Chen</strong>, <strong>Yangzhao Xu*</strong>, <strong>Haijun Rong*</strong></h3>
   <p align="center">
     <img src="result/1.png" alt="Description of the image" style="width:64%;">
   <p align="center">
