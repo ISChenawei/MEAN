@@ -91,11 +91,13 @@ This project is licensed under the [Apache 2.0 license](LICENSE).
 
 ```bibtex
 @article{chen2024multi,
-  title={Multi-Level Embedding and Alignment Network with Consistency and Invariance Learning for Cross-View Geo-Localization},
   author={Chen, Zhongwei and Yang, Zhao-Xu and Rong, Hai-Jun},
-  journal={arXiv preprint arXiv:2412.14819},
-  year={2024}
-}
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={Multi-Level Embedding and Alignment Network with Consistency and Invariance Learning for Cross-View Geo-Localization}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-1}}
 ```
 
 ## <a id="acknowledgments"></a> 🙏 Acknowledgments
