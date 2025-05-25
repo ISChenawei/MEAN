@@ -13,8 +13,8 @@ The current version of the repository can cover the experiments reported in the 
 
 ## <a id="news"></a> 🔥 News
 - [May 17, 2025]: MEAN is accepted by TGRS'25 🎉
-- [Feb 28, 2025]: We released the **MEAN** model and its pre-trained weights.
 - [Apr 15, 2025]: We uploaded the visualization code.
+- [Feb 28, 2025]: We released the **MEAN** model and its pre-trained weights.
 ---
 ## <a id="table-of-contents"></a> 📚 Table of contents
 
