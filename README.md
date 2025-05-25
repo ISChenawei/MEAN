@@ -1,4 +1,4 @@
-## MEAN 2024 [[paper](https://arxiv.org/abs/2412.14819)][[model](https://pan.baidu.com/s/1YPEV27tnadqCZBRCscTMTA)] [[Cite](#Citation)]
+## MEAN 2024 [[paper](https://ieeexplore.ieee.org/document/11010144)][[model](https://pan.baidu.com/s/1YPEV27tnadqCZBRCscTMTA)] [[Cite](#Citation)]
 <p align="center">
 
   <h1 align="center">Multi-Level Embedding and Alignment Network with Consistency and Invariance Learning for Cross-View Geo-Localization</h1>
