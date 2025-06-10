@@ -1,13 +1,13 @@
 ## MEAN 2024 [[paper](https://ieeexplore.ieee.org/document/11010144)][[model](https://pan.baidu.com/s/1YPEV27tnadqCZBRCscTMTA)] [[Cite](#Citation)]
 <p align="center">
 
-  <h1 align="center">Multi-Level Embedding and Alignment Network with Consistency and Invariance Learning for Cross-View Geo-Localization</h1>
+  <h1 align="center">Multilevel Embedding and Alignment Network With Consistency and Invariance Learning for Cross-View Geo-Localization</h1>
   <h3 align="center"><strong>Zhongwei Chen</strong>, <strong>Yangzhao Xu*</strong>, <strong>Haijun Rong*</strong></h3>
   <p align="center">
     <img src="result/1.png" alt="Description of the image" style="width:64%;">
   <p align="center">
   
-This repository is the official implementation of the paper "Multi-Level Embedding and Alignment Network with Consistency and Invariance Learning for Cross-View Geo-Localization" (https://arxiv.org/abs/2412.14819). 
+This repository is the official implementation of the paper "Multilevel Embedding and Alignment Network With Consistency and Invariance Learning for Cross-View Geo-Localization" (https://arxiv.org/abs/2412.14819). 
 
 The current version of the repository can cover the experiments reported in the paper, for researchers in time efficiency. And we will also update this repository for better understanding and clarity.
 
