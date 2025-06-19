@@ -12,9 +12,9 @@ This repository is the official implementation of the paper "Multilevel Embeddin
 The current version of the repository can cover the experiments reported in the paper, for researchers in time efficiency. And we will also update this repository for better understanding and clarity.
 
 ## <a id="news"></a> 🔥 News
-- [May 17, 2025]: MEAN is accepted by TGRS'25 🎉
-- [Apr 15, 2025]: We uploaded the visualization code.
-- [Feb 28, 2025]: We released the **MEAN** model and its pre-trained weights.
+- [May  17, 2025]: MEAN is accepted by TGRS'25 🎉
+- [Apr  15, 2025]: We uploaded the visualization code.
+- [Feb  28, 2025]: We released the **MEAN** model and its pre-trained weights.
 ---
 ## <a id="table-of-contents"></a> 📚 Table of contents
 
