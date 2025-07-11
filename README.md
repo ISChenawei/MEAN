@@ -95,9 +95,9 @@ This project is licensed under the [Apache 2.0 license](LICENSE).
   journal={IEEE Transactions on Geoscience and Remote Sensing}, 
   title={Multi-Level Embedding and Alignment Network with Consistency and Invariance Learning for Cross-View Geo-Localization}, 
   year={2025},
-  volume={},
+  volume={63},
   number={},
-  pages={1-1}}
+  pages={1-15}
 ```
 
 ## <a id="acknowledgments"></a> 🙏 Acknowledgments
