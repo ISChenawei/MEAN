@@ -83,9 +83,9 @@ def train(train_config, model, dataloader, loss_functions, optimizer, epoch, tra
                                                           model.module.logit_scale_blocks.exp())
 
 
-                # lossall = train_config.weight_infonce * loss + train_config.weight_cls * loss_cls + train_config.weight_dsa * loss_DSA
+                lossall = train_config.weight_infonce * loss + train_config.weight_cls * loss_cls + train_config.weight_dsa * loss_DSA
 
-                lossall = 1.0 * loss + 0.0 * loss_cls + 0.0 * loss_DSA
+                # lossall = 1.0 * loss + 0.0 * loss_cls + 0.0 * loss_DSA
 
                 losses.update(lossall.item())
 
