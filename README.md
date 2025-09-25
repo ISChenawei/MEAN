@@ -3,6 +3,11 @@
 
   <h1 align="center">Multilevel Embedding and Alignment Network With Consistency and Invariance Learning for Cross-View Geo-Localization</h1>
   <h3 align="center"><strong>Zhongwei Chen</strong>, <strong>Zhaoxu Yang*</strong>, <strong>Haijun Rong*</strong></h3>
+  <div align="center">
+  School of Aerospace Engineering, Xi'an Jiaotong University China<br>
+  State Key Laboratory for Strength and Vibration of Mechanical Structures<br>
+  Shaanxi Key Laboratory of Environment and Control for Flight Vehicle<br>
+  </div>
   <p align="center">
     <img src="result/1.png" alt="Description of the image" style="width:64%;">
   <p align="center">
