@@ -106,5 +106,5 @@ This project is licensed under the [Apache 2.0 license](LICENSE).
 ```
 
 ## <a id="acknowledgments"></a> 🙏 Acknowledgments
-This repository is built using the Sample4Geo[https://github.com/Skyy93/Sample4Geo], MCCG[https://github.com/mode-str/crossview] and DAC [https://github.com/SummerpanKing/DAC] repositories.
+This repository is built using the [Sample4Geo](https://github.com/Skyy93/Sample4Geo), [MCCG](https://github.com/mode-str/crossview) and [DAC](https://github.com/SummerpanKing/DAC) repositories.
 
