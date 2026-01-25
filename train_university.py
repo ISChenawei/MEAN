@@ -59,8 +59,8 @@ class Configuration:
         parser.add_argument('--mixed_precision', default=True, type=bool)
         parser.add_argument('--custom_sampling', default=True, type=bool)
         parser.add_argument('--seed', default=1, type=int, help='random seed')
-        parser.add_argument('--epochs', default=3, type=int, help='1 epoch for 1652')
-        parser.add_argument('--batch_size', default=4, type=int, help='remember the bs is for 2 branches')
+        parser.add_argument('--epochs', default=2, type=int, help='2 epoch for 1652')
+        parser.add_argument('--batch_size', default=64, type=int, help='remember the bs is for 2 branches')
         parser.add_argument('--verbose', default=True, type=bool)
         parser.add_argument('--gpu_ids', default=(0,1, 2, 3), type=tuple)
 
