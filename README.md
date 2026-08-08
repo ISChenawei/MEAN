@@ -66,7 +66,7 @@ The implementation supports the experiments reported in the paper and provides t
 
 ## 🔥 News
 
-- **May 17, 2025:** MEAN was accepted by **IEEE Transactions on Geoscience and Remote Sensing (TGRS)**. 🎉
+- **May 17, 2025:** MEAN was accepted by **IEEE TGRS**. 🎉
 - **April 15, 2025:** Visualization code was released.
 - **February 28, 2025:** MEAN code and pretrained checkpoints were released.
 
