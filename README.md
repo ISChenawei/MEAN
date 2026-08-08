@@ -38,22 +38,10 @@ Shaanxi Key Laboratory of Environment and Control for Flight Vehicle<br>
 
 ---
 
-## 🔎 Overview
-
-**MEAN** is a cross-view geo-localization framework designed to improve feature representation and cross-view alignment between drone-view and satellite imagery.
-
-The method focuses on three central aspects:
-
-- **Multilevel embedding** for learning discriminative representations across different feature levels.
-- **Cross-view alignment** for reducing the representation gap between drone and satellite images.
-- **Consistency and invariance learning** for improving feature robustness under substantial viewpoint changes.
+## <a id="motivation"></a>💡 Motivation
 
 <p align="center">
-  <img src="result/1.png" alt="MEAN framework overview" style="width:75%;">
-</p>
-
-<p align="center">
-  <em>Overview of the proposed MEAN framework for cross-view geo-localization.</em>
+  <img src="result/1.png" alt="Motivation of MEAN framework" style="width:75%;">
 </p>
 
 This repository provides the official implementation of:
@@ -72,23 +60,10 @@ The implementation supports the experiments reported in the paper and provides t
 
 ---
 
-## ✨ Highlights
-
-- A unified framework for **drone-to-satellite cross-view geo-localization**.
-- Multilevel feature embedding for more discriminative geographic representations.
-- Explicit cross-view alignment to reduce the drone–satellite domain gap.
-- Consistency and invariance learning for robust representation learning.
-- Support for both **University-1652** and **SUES-200**.
-- Training and evaluation code for reproducing the experiments reported in the paper.
-- Publicly available pretrained checkpoints and visualization tools.
-
----
-
 ## 📚 Table of Contents
 
 - [Overview](#-overview)
 - [News](#-news)
-- [Highlights](#-highlights)
 - [Dataset Access](#-dataset-access)
 - [Dataset Structure](#-dataset-structure)
 - [Training and Evaluation](#-training-and-evaluation)
